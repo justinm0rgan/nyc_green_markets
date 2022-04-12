@@ -1,0 +1,2975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name><![CDATA[GrowNYC Schedule & Map]]></name>
+    <description>Find farm fresh food at GrowNYC Greenmarkets, Farmstands, and Fresh Food Box sites, and locations to drop your food scraps for composting, using this interactive map. More info: www.grownyc.org</description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>GrowNYC Greenmarket Locations</name>
+      <Placemark>
+        <name>Bartel Pritchard Square Greenmarket</name>
+        <address>Bartel-Pritchard Square Prospect Park West at 15th Street Brooklyn NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: Bartel-Pritchard Square<br>Location: Prospect Park West at 15th Street<br>City: Brooklyn<br>State: NY<br>Days Open: Wednesdays<br>Market Hours: 8am - 2pm Wed<br>9am - 3pm Sun<br>Compost Hours: N/A<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/greenmarket/brooklyn/bartel-pritchard-square-wed<br><br>https://www.grownyc.org/greenmarket/brooklyn/bartel-pritchard-square-sun<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>Bartel-Pritchard Square</value>
+          </Data>
+          <Data name="Location">
+            <value>Prospect Park West at 15th Street</value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm Wed
+9am - 3pm Sun</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/bartel-pritchard-square-wed
+
+https://www.grownyc.org/greenmarket/brooklyn/bartel-pritchard-square-sun</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>97th Street Greenmarket</name>
+        <address><![CDATA[125-157 W 97th St 97th Street btw Columbus & Amsterdam New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 125-157 W 97th St<br>Location: 97th Street btw Columbus & Amsterdam<br>City: New York<br>State: NY<br>Days Open: Fridays<br>Market Hours: 8am - 2pm<br>Compost Hours: 8am - 12:30pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/greenmarket/manhattan/west-97<br>Notes: Thanksgiving Shopping: Open Wednesday 11/24 and closed Friday 11/26]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>125-157 W 97th St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[97th Street btw Columbus & Amsterdam]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12:30pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/greenmarket/manhattan/west-97</value>
+          </Data>
+          <Data name="Notes">
+            <value>Thanksgiving Shopping: Open Wednesday 11/24 and closed Friday 11/26</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Union Square Greenmarket</name>
+        <address><![CDATA[14 Union Square E Union Square West & 17th St New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 14 Union Square E<br>Location: Union Square West & 17th St<br>City: New York<br>State: NY<br>Days Open: Mondays, Wednesdays, Fridays, & Saturdays<br>Market Hours: 8am - 6pm<br>Compost Hours: 8am - 5pm<br>Clothing Collection Hours: N/A<br>Market Info: Monday: www.grownyc.org/unionsquaregreemarket-mon<br><br>Wednesday: www.grownyc.org/unionsquaregreemarket-wed<br><br>Friday: www.grownyc.org/unionsquaregreemarket-fri<br><br>Saturday: www.grownyc.org/unionsquaregreemarket-sat<br>Notes: Open Tuesday 11/23 and closed Friday 11/26]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>14 Union Square E</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Union Square West & 17th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value><![CDATA[Mondays, Wednesdays, Fridays, & Saturdays]]></value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 6pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 5pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>Monday: www.grownyc.org/unionsquaregreemarket-mon
+
+Wednesday: www.grownyc.org/unionsquaregreemarket-wed
+
+Friday: www.grownyc.org/unionsquaregreemarket-fri
+
+Saturday: www.grownyc.org/unionsquaregreemarket-sat</value>
+          </Data>
+          <Data name="Notes">
+            <value>Open Tuesday 11/23 and closed Friday 11/26</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>7th Ave Sunset Park Greenmarket </name>
+        <address><![CDATA[4399-4301 7th Ave 7th Ave & 44th St Brooklyn NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 4399-4301 7th Ave<br>Location: 7th Ave & 44th St<br>City: Brooklyn<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 3pm<br>Compost Hours: 8am - 12pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/7aveSunsetParkGreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>4399-4301 7th Ave</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[7th Ave & 44th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/7aveSunsetParkGreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>82nd Street Greenmarket</name>
+        <address><![CDATA[408 E 82nd St 82nd Street btw 1st & York New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 408 E 82nd St<br>Location: 82nd Street btw 1st & York<br>City: New York<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 9am - 2:30pm<br>Compost Hours: N/A<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/82greenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>408 E 82nd St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[82nd Street btw 1st & York]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>9am - 2:30pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/82greenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Abingdon Square Park Greenmarket</name>
+        <address><![CDATA[16 Abingdon Square Hudson St & W 12th St New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 16 Abingdon Square<br>Location: Hudson St & W 12th St<br>City: New York<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 2pm<br>Compost Hours: 8am - 2pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/abingdongreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>16 Abingdon Square</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Hudson St & W 12th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/abingdongreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Fort Greene Greenmarket</name>
+        <address><![CDATA[209 Washington Park Washington Park & Dekalb Brooklyn NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 209 Washington Park<br>Location: Washington Park & Dekalb<br>City: Brooklyn<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 3pm<br>Compost Hours: 9am - 2pm<br>Clothing Collection Hours: 9am - 1pm<br>Market Info: https://www.grownyc.org/fortgreenegreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>209 Washington Park</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Washington Park & Dekalb]]></value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am - 2pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>9am - 1pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/fortgreenegreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Grand Army Plaza Greenmarket</name>
+        <address>1 Prospect Park Grand Army Plaza Brooklyn NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 1 Prospect Park<br>Location: Grand Army Plaza<br>City: Brooklyn<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 3pm<br>Compost Hours: 8am - 2pm<br>Clothing Collection Hours: 9am - 12:30pm<br>Market Info: https://www.grownyc.org/grandarmygreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>1 Prospect Park</value>
+          </Data>
+          <Data name="Location">
+            <value>Grand Army Plaza</value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>9am - 12:30pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/grandarmygreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Inwood Greenmarket</name>
+        <address><![CDATA[626-610 Isham St Isham btwn Seaman & Cooper New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 626-610 Isham St<br>Location: Isham btwn Seaman & Cooper<br>City: New York<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 3pm<br>Compost Hours: 8am - 12pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/inwoodgreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>626-610 Isham St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Isham btwn Seaman & Cooper]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/inwoodgreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>McCarren Park Greenmarket</name>
+        <address><![CDATA[227-235 N 12th St N 12th btwn Union & Driggs Brooklyn NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 227-235 N 12th St<br>Location: N 12th btwn Union & Driggs<br>City: Brooklyn<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 2pm<br>Compost Hours: 8am - 12pm<br>Clothing Collection Hours: 8am - 1:30pm<br>Market Info: https://www.grownyc.org/greenmarket/brooklyn/greenpoint-sa<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>227-235 N 12th St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[N 12th btwn Union & Driggs]]></value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>8am - 1:30pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/greenpoint-sa</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Saint George Greenmarket</name>
+        <address>325 St Marks Pl St Marks Pl and Hyatt St Staten Island NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 325 St Marks Pl<br>Location: St Marks Pl and Hyatt St<br>City: Staten Island<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 1pm<br>Compost Hours: 8am - 12pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/saintgeorgegreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>325 St Marks Pl</value>
+          </Data>
+          <Data name="Location">
+            <value>St Marks Pl and Hyatt St</value>
+          </Data>
+          <Data name="City">
+            <value>Staten Island</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 1pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/saintgeorgegreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Sunnyside Greenmarket</name>
+        <address><![CDATA[41-15 Skillman Ave Skillman Ave & 43rd St Queens NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 41-15 Skillman Ave<br>Location: Skillman Ave & 43rd St<br>City: Queens<br>State: NY<br>Days Open: Saturdays<br>Market Hours: 8am - 2pm<br>Compost Hours: 9am - 1pm<br>Clothing Collection Hours: 8am - 2pm<br>Market Info: https://www.grownyc.org/sunnysidegreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>41-15 Skillman Ave</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Skillman Ave & 43rd St]]></value>
+          </Data>
+          <Data name="City">
+            <value>Queens</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am - 1pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/sunnysidegreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>79th Street Greenmarket</name>
+        <address><![CDATA[391-405 Columbus Ave 79th Street & Columbus New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 391-405 Columbus Ave<br>Location: 79th Street & Columbus<br>City: New York<br>State: NY<br>Days Open: Sundays<br>Market Hours: 9am - 4pm<br>Compost Hours: 9am - 3pm<br>Clothing Collection Hours: 9am - 12pm<br>Market Info: https://www.grownyc.org/79greenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>391-405 Columbus Ave</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[79th Street & Columbus]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>9am - 4pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am - 3pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>9am - 12pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/79greenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Carroll Gardens Greenmarket</name>
+        <address><![CDATA[249-243 Carroll St Smith & Carroll  Brooklyn NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 249-243 Carroll St<br>Location: Smith & Carroll <br>City: Brooklyn<br>State: NY<br>Days Open: Sundays<br>Market Hours: 8am - 2pm<br>Compost Hours: 8am - 12pm<br>Clothing Collection Hours: 8am - 1:30pm<br>Market Info: https://www.grownyc.org/carrollgreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>249-243 Carroll St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Smith & Carroll ]]></value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>8am - 1:30pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/carrollgreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Cortelyou Greenmarket</name>
+        <address><![CDATA[1305 Cortelyou Rd Cortelyou btw Rugby & Argyle Brooklyn NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 1305 Cortelyou Rd<br>Location: Cortelyou btw Rugby & Argyle<br>City: Brooklyn<br>State: NY<br>Days Open: Sundays<br>Market Hours: 8am - 2pm<br>Compost Hours: 9am - 1pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/cortelyougreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>1305 Cortelyou Rd</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Cortelyou btw Rugby & Argyle]]></value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am - 1pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/cortelyougreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Forest Hills Greenmarket</name>
+        <address><![CDATA[10628 Queens Blvd Queens Blvd & 70th Ave Queens NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 10628 Queens Blvd<br>Location: Queens Blvd & 70th Ave<br>City: Queens<br>State: NY<br>Days Open: Sundays<br>Market Hours: 8am - 2pm<br>Compost Hours: N/A<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/foresthillsgreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>10628 Queens Blvd</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Queens Blvd & 70th Ave]]></value>
+          </Data>
+          <Data name="City">
+            <value>Queens</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foresthillsgreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Jackson Heights Greenmarket</name>
+        <address><![CDATA[34th Ave & 79th St 34th Ave & 79th St Queens NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 34th Ave & 79th St<br>Location: 34th Ave & 79th St<br>City: Queens<br>State: NY<br>Days Open: Sundays<br>Market Hours: 8am - 2pm<br>Compost Hours: 9am - 1pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/jacksonheightsgreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value><![CDATA[34th Ave & 79th St]]></value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[34th Ave & 79th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>Queens</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 2pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am - 1pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/jacksonheightsgreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tompkins Square Greenmarket</name>
+        <address><![CDATA[116 Avenue A Ave A & 7th St New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 116 Avenue A<br>Location: Ave A & 7th St<br>City: New York<br>State: NY<br>Days Open: Sundays<br>Market Hours: 9am - 4pm<br>Compost Hours: 9am - 5pm<br>Clothing Collection Hours: 9am - 1pm <br>Market Info: https://www.grownyc.org/tompkinsgreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>116 Avenue A</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Ave A & 7th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>9am - 4pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am - 5pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>9am - 1pm </value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/tompkinsgreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tucker Square Greenmarket</name>
+        <address><![CDATA[134 Columbus Avenue Columbus & 66th St New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 134 Columbus Avenue<br>Location: Columbus & 66th St<br>City: New York<br>State: NY<br>Days Open: Thursdays & Saturdays<br>Market Hours: Thursday: 8am - 3pm<br>Saturday: 8am - 4pm<br>Compost Hours: Thursdays Only 8am - 11am<br>Clothing Collection Hours: N/A<br>Market Info: Thursday: www.grownyc.org/tuckergreenmarket-thu<br><br>Saturday: www.grownyc.org/tuckergreenmarket-sat<br>Notes: Thanksgiving Shopping: Open Wednesday 11/24 and closed Thursday 11/25]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>134 Columbus Avenue</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Columbus & 66th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value><![CDATA[Thursdays & Saturdays]]></value>
+          </Data>
+          <Data name="Market Hours">
+            <value>Thursday: 8am - 3pm
+Saturday: 8am - 4pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>Thursdays Only 8am - 11am</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>Thursday: www.grownyc.org/tuckergreenmarket-thu
+
+Saturday: www.grownyc.org/tuckergreenmarket-sat</value>
+          </Data>
+          <Data name="Notes">
+            <value>Thanksgiving Shopping: Open Wednesday 11/24 and closed Thursday 11/25</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Columbia Greenmarket</name>
+        <address><![CDATA[2910 Broadway Broadway & 114th St New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 2910 Broadway<br>Location: Broadway & 114th St<br>City: New York<br>State: NY<br>Days Open: Thursdays & Sundays<br>Market Hours: 8am - 4pm<br>Compost Hours: Sundays Only 8am - 12pm<br>Clothing Collection Hours: Sundays Only 9am - 12pm<br>Market Info: Thursday: www.grownyc.org/columbiagreenmarket-thu<br><br>Sunday: www.grownyc.org/columbiagreenmarket-sun<br>Notes: Thanksgiving Shopping: Open Tuesday 11/23 and closed Thursday 11/25]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>2910 Broadway</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Broadway & 114th St]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value><![CDATA[Thursdays & Sundays]]></value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 4pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>Sundays Only 8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>Sundays Only 9am - 12pm</value>
+          </Data>
+          <Data name="Market Info">
+            <value>Thursday: www.grownyc.org/columbiagreenmarket-thu
+
+Sunday: www.grownyc.org/columbiagreenmarket-sun</value>
+          </Data>
+          <Data name="Notes">
+            <value>Thanksgiving Shopping: Open Tuesday 11/23 and closed Thursday 11/25</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Brooklyn Borough Hall Greenmarket</name>
+        <address><![CDATA[360 Adams Street Montague & Court Streets Brooklyn NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 360 Adams Street<br>Location: Montague & Court Streets<br>City: Brooklyn<br>State: NY<br>Days Open: Tuesdays & Saturdays<br>Market Hours: 8am - 3pm<br>Compost Hours: Saturdays Only 8am - 12pm<br>Clothing Collection Hours: N/A<br>Market Info: Tuesday: www.grownyc.org/bkboroughhall-tue<br><br>Saturday: www.grownyc.org/bkboroughhall-sat<br>Notes: Temporarily closed on Thursdays]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>360 Adams Street</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Montague & Court Streets]]></value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value><![CDATA[Tuesdays & Saturdays]]></value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>Saturdays Only 8am - 12pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>Tuesday: www.grownyc.org/bkboroughhall-tue
+
+Saturday: www.grownyc.org/bkboroughhall-sat</value>
+          </Data>
+          <Data name="Notes">
+            <value>Temporarily closed on Thursdays</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bowling Green Greenmarket </name>
+        <address>1 Bowling Green Broadway at Battery Place Manhattan NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 1 Bowling Green<br>Location: Broadway at Battery Place<br>City: Manhattan<br>State: NY<br>Days Open: Tuesdays & Thursdays<br>Market Hours: 8am - 5pm<br>Compost Hours: Tuesdays Only 8am - 11am<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/greenmarket/manhattan/bowling-green-tu<br>Notes: Thanksgiving Shopping: Open Wednesday 11/24 and closed Thursday 11/25]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>1 Bowling Green</value>
+          </Data>
+          <Data name="Location">
+            <value>Broadway at Battery Place</value>
+          </Data>
+          <Data name="City">
+            <value>Manhattan</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value><![CDATA[Tuesdays & Thursdays]]></value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 5pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>Tuesdays Only 8am - 11am</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/greenmarket/manhattan/bowling-green-tu</value>
+          </Data>
+          <Data name="Notes">
+            <value>Thanksgiving Shopping: Open Wednesday 11/24 and closed Thursday 11/25</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Dag Hammarskjold Greenmarket</name>
+        <address><![CDATA[389-301 E 47th St 47th Ave & 2nd Ave New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 389-301 E 47th St<br>Location: 47th Ave & 2nd Ave<br>City: New York<br>State: NY<br>Days Open: Wednesdays<br>Market Hours: 8am - 3pm<br>Compost Hours: 8am - 12:30pm<br>Clothing Collection Hours: N/A<br>Market Info: https://www.grownyc.org/daghammarskjoldgreenmarket<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>389-301 E 47th St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[47th Ave & 2nd Ave]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am - 12:30pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/daghammarskjoldgreenmarket</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Tribeca Greenmarket</name>
+        <address><![CDATA[302 Greenwich St Greenwich St & Chambers St New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address for GPS: 302 Greenwich St<br>Location: Greenwich St & Chambers St<br>City: New York<br>State: NY<br>Days Open: Wednesdays & Saturdays<br>Market Hours: 8am - 3pm<br>Compost Hours: Saturdays Only 8am - 1pm<br>Clothing Collection Hours: N/A<br>Market Info: Wednesday: www.grownyc.org/greenmarket/manhattan/tribeca-w<br><br>Saturday: www.grownyc.org/tribecagreenmarket-sat<br>Notes: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address for GPS">
+            <value>302 Greenwich St</value>
+          </Data>
+          <Data name="Location">
+            <value><![CDATA[Greenwich St & Chambers St]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Days Open">
+            <value><![CDATA[Wednesdays & Saturdays]]></value>
+          </Data>
+          <Data name="Market Hours">
+            <value>8am - 3pm</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>Saturdays Only 8am - 1pm</value>
+          </Data>
+          <Data name="Clothing Collection Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>Wednesday: www.grownyc.org/greenmarket/manhattan/tribeca-w
+
+Saturday: www.grownyc.org/tribecagreenmarket-sat</value>
+          </Data>
+          <Data name="Notes">
+            <value/>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>GrowNYC Farmstand Locations</name>
+      <Placemark>
+        <name>Norwood Farmstand</name>
+        <address>E Gun Hill Rd and Dekalb Ave Bronx New York</address>
+        <description><![CDATA[Open Date: Year Round<br>Close Date: Year Round<br>GPS Coordinates: 40.882048, -73.880482<br>Location: E Gun Hill Rd and Dekalb Ave<br>City: Bronx<br>State: New York<br>Days Open: Thursdays<br>Farmstand Hours: 8:30 am - 4 pm<br>Food Scrap Drop-off Hours: <br>Farmstand Info: https://www.grownyc.org/farmstand/norwood]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year Round</value>
+          </Data>
+          <Data name="GPS Coordinates">
+            <value>40.882048, -73.880482</value>
+          </Data>
+          <Data name="Location">
+            <value>E Gun Hill Rd and Dekalb Ave</value>
+          </Data>
+          <Data name="City">
+            <value>Bronx</value>
+          </Data>
+          <Data name="State">
+            <value>New York</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Farmstand Hours">
+            <value>8:30 am - 4 pm</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value/>
+          </Data>
+          <Data name="Farmstand Info">
+            <value>https://www.grownyc.org/farmstand/norwood</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Crown Heights Farmstand</name>
+        <address>Nostrand Avenue and Sullivan Place Brooklyn New York</address>
+        <description><![CDATA[Open Date: Opens October 22<br>Close Date: TBD<br>GPS Coordinates: 40.6647231, -73.951063<br>Location: Nostrand Avenue and Sullivan Place<br>City: Brooklyn<br>State: New York<br>Days Open: Fridays<br>Farmstand Hours: 9:00 am - 3:00 pm<br>Food Scrap Drop-off Hours: 9:00 am - 2:00 pm<br>Farmstand Info: https://www.grownyc.org/farmstand/crownheights]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Opens October 22</value>
+          </Data>
+          <Data name="Close Date">
+            <value>TBD</value>
+          </Data>
+          <Data name="GPS Coordinates">
+            <value>40.6647231, -73.951063</value>
+          </Data>
+          <Data name="Location">
+            <value>Nostrand Avenue and Sullivan Place</value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>New York</value>
+          </Data>
+          <Data name="Days Open">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Farmstand Hours">
+            <value>9:00 am - 3:00 pm</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>9:00 am - 2:00 pm</value>
+          </Data>
+          <Data name="Farmstand Info">
+            <value>https://www.grownyc.org/farmstand/crownheights</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>GrowNYC Fresh Food Box Locations </name>
+      <Placemark>
+        <name>East Harlem Health Action Center Fresh Food Box </name>
+        <address>158 E 115th Street New York NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year-round<br>Address: 158 E 115th Street<br>City: New York<br>State: NY<br>Day: Thursdays <br>Hours: 2:30 PM - 6:30 PM<br>Community Partner: East Harlem Health Action Center<br>Courtesy Hour for Higher-Risk Customers: 1:30 PM - 2:30 PM<br>Food Scrap Drop-off Hours: N/A<br>Market Info: https://www.grownyc.org/foodbox/East_Harlem_Health_Action_Center]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Address">
+            <value>158 E 115th Street</value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays </value>
+          </Data>
+          <Data name="Hours">
+            <value>2:30 PM - 6:30 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>East Harlem Health Action Center</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>1:30 PM - 2:30 PM</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/East_Harlem_Health_Action_Center</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Lenox Hill Neighborhood House Fresh Food Box </name>
+        <address><![CDATA[70th Street & 1st Avenue New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year Round<br>Address: 70th Street & 1st Avenue<br>City: New York<br>State: NY<br>Day: Tuesdays <br>Hours: 2:30 PM – 6:30 PM<br>Community Partner: Lenox Hill Neighborhood House<br>Courtesy Hour for Higher-Risk Customers: 1:30 PM - 2:30 PM<br>Food Scrap Drop-off Hours: N/A<br>Market Info: https://www.grownyc.org/foodbox/Lenox_Hill_Neighborhood_House]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Address">
+            <value><![CDATA[70th Street & 1st Avenue]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Tuesdays </value>
+          </Data>
+          <Data name="Hours">
+            <value>2:30 PM – 6:30 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>Lenox Hill Neighborhood House</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>1:30 PM - 2:30 PM</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/Lenox_Hill_Neighborhood_House</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Uptown Grand Central Fresh Food Box</name>
+        <address><![CDATA[125th Street & Park Avenue New York NY]]></address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year Round<br>Address: 125th Street & Park Avenue<br>City: New York<br>State: NY<br>Day: Wednesdays<br>Hours: 3:00 PM - 7:00 PM<br>Community Partner: Uptown Grand Central<br>Courtesy Hour for Higher-Risk Customers: <br>Food Scrap Drop-off Hours: 2:00 PM - 7:00 PM<br>Market Info: https://www.grownyc.org/foodbox/Uptown_Grand_Central]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Address">
+            <value><![CDATA[125th Street & Park Avenue]]></value>
+          </Data>
+          <Data name="City">
+            <value>New York</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Hours">
+            <value>3:00 PM - 7:00 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>Uptown Grand Central</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value/>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>2:00 PM - 7:00 PM</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/Uptown_Grand_Central</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Bed-Stuy Fresh Food Box</name>
+        <address>228 Decatur Street Brooklyn NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year Round<br>Address: 228 Decatur Street<br>City: Brooklyn<br>State: NY<br>Day: Saturdays <br>Hours: 10:30 AM - 3:00 PM<br>Community Partner: Mt. Lebanon Baptist Church<br>Courtesy Hour for Higher-Risk Customers: N/A<br>Food Scrap Drop-off Hours: 11:00 AM - 3:00 PM<br>Market Info: https://www.grownyc.org/foodbox/Bed-Stuy]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Address">
+            <value>228 Decatur Street</value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays </value>
+          </Data>
+          <Data name="Hours">
+            <value>10:30 AM - 3:00 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>Mt. Lebanon Baptist Church</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>N/A</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>11:00 AM - 3:00 PM</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/Bed-Stuy</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Montefiore Fresh Food Box</name>
+        <address>871 Prospect Ave Bronx NY</address>
+        <description><![CDATA[Open Date: Year-round<br>Close Date: Year Round<br>Address: 871 Prospect Ave<br>City: Bronx<br>State: NY<br>Day: Fridays<br>Hours: 11:00 AM - 2:00 PM<br>Community Partner: Montefiore's Bronx Health Collective<br>Courtesy Hour for Higher-Risk Customers: N/A<br>Food Scrap Drop-off Hours: 11:00 AM - 2:00 PM<br>Market Info: https://www.grownyc.org/foodbox/montefiore]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Close Date">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Address">
+            <value>871 Prospect Ave</value>
+          </Data>
+          <Data name="City">
+            <value>Bronx</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Hours">
+            <value>11:00 AM - 2:00 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value><![CDATA[Montefiore's Bronx Health Collective]]></value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>N/A</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>11:00 AM - 2:00 PM</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/montefiore</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>CPC Fresh Food Box</name>
+        <address>4101 8th Avenue (side entrance) Brooklyn NY</address>
+        <description><![CDATA[Open Date: Seasonal<br>Close Date: 6/29/22<br>Address: 4101 8th Avenue (side entrance)<br>City: Brooklyn<br>State: NY<br>Day: Wednesdays<br>Hours: 12:00 PM - 3:00 PM<br>Community Partner: Chinese-American Planning Council<br>Courtesy Hour for Higher-Risk Customers: N/A<br>Food Scrap Drop-off Hours: N/A<br>Market Info: https://www.grownyc.org/foodbox/cpc]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Close Date">
+            <value>6/29/22</value>
+          </Data>
+          <Data name="Address">
+            <value>4101 8th Avenue (side entrance)</value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Hours">
+            <value>12:00 PM - 3:00 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>Chinese-American Planning Council</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>N/A</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/cpc</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Mixteca Fresh Food Box</name>
+        <address>245 23rd St Brooklyn NY</address>
+        <description><![CDATA[Open Date: Seasonal<br>Close Date: 6/25<br>Address: 245 23rd St<br>City: Brooklyn<br>State: NY<br>Day: Saturdays<br>Hours: 11:00 AM - 2:00 PM<br>Community Partner: Mixteca Organization, Inc.<br>Courtesy Hour for Higher-Risk Customers: N/A<br>Food Scrap Drop-off Hours: N/A<br>Market Info: https://www.grownyc.org/foodbox/mixteca]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Close Date">
+            <value>6/25</value>
+          </Data>
+          <Data name="Address">
+            <value>245 23rd St</value>
+          </Data>
+          <Data name="City">
+            <value>Brooklyn</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Hours">
+            <value>11:00 AM - 2:00 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>Mixteca Organization, Inc.</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>N/A</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/mixteca</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Morris Heights Fresh Food Box</name>
+        <address>85 W Burnside Ave Bronx NY</address>
+        <description><![CDATA[Open Date: Seasonal (opening 12/15)<br>Close Date: 6/29/22<br>Address: 85 W Burnside Ave<br>City: Bronx<br>State: NY<br>Day: Wednesdays<br>Hours: 2:00 PM - 6:00 PM<br>Community Partner: Morris Heights Health Center<br>Courtesy Hour for Higher-Risk Customers: N/A<br>Food Scrap Drop-off Hours: N/A<br>Market Info: https://www.grownyc.org/foodbox/morris-heights]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Open Date">
+            <value>Seasonal (opening 12/15)</value>
+          </Data>
+          <Data name="Close Date">
+            <value>6/29/22</value>
+          </Data>
+          <Data name="Address">
+            <value>85 W Burnside Ave</value>
+          </Data>
+          <Data name="City">
+            <value>Bronx</value>
+          </Data>
+          <Data name="State">
+            <value>NY</value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Hours">
+            <value>2:00 PM - 6:00 PM</value>
+          </Data>
+          <Data name="Community Partner">
+            <value>Morris Heights Health Center</value>
+          </Data>
+          <Data name="Courtesy Hour for Higher-Risk Customers">
+            <value>N/A</value>
+          </Data>
+          <Data name="Food Scrap Drop-off Hours">
+            <value>N/A</value>
+          </Data>
+          <Data name="Market Info">
+            <value>https://www.grownyc.org/foodbox/morris-heights</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>GrowNYC Food Scrap Drop-off Locations</name>
+      <Placemark>
+        <name>Compost at 97th Street Greenmarket</name>
+        <description><![CDATA[Location: 97th St. & Columbus Ave.<br>Day: Fridays<br>Duration: Year Round<br>Compost Hours: 8am-12:30pm<br>Coordinates: 40.794085, -73.967098<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/west-97]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[97th St. & Columbus Ave.]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.794085, -73.967098</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/west-97</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.967098,40.794085,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Fordham Plaza Food Scrap Drop-off</name>
+        <description><![CDATA[Location: E Fordham Rd btw. Webster Ave & Third Ave<br>Day: Fridays<br>Duration: Year Round<br>Compost Hours: 8am-11:30am<br>Coordinates: 40.861152, -73.890783<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/bronx/fordham]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[E Fordham Rd btw. Webster Ave & Third Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-11:30am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.861152, -73.890783</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/bronx/fordham</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.890783,40.861152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Tompkins Square Greenmarket</name>
+        <description><![CDATA[Location: E 7th St. & Avenue A<br>Day: Sundays<br>Duration: Year Round<br>Compost Hours: 9am-5pm<br>Coordinates: 40.72595,-73.983285<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/tompkins-square]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[E 7th St. & Avenue A]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-5pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.72595,-73.983285</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/tompkins-square</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.983285,40.72595,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Union Square Greenmarket</name>
+        <description><![CDATA[Location: NE Section of Union Square Park<br>Day: Mon, Wed, Fri, Sat<br>Duration: Year Round<br>Compost Hours: 8am-5pm<br>Coordinates: 40.736579,-73.989534<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan-union-square-sa]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>NE Section of Union Square Park</value>
+          </Data>
+          <Data name="Day">
+            <value>Mon, Wed, Fri, Sat</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-5pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.736579,-73.989534</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan-union-square-sa</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.989534,40.736579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at New Roots Community Farm</name>
+        <description><![CDATA[Location: 670 Grand Concourse<br>Day: Fridays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.82135, -73.92506<br>Food Access Program Webpage: https://www.instagram.com/newrootsbronx/]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>670 Grand Concourse</value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.82135, -73.92506</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.instagram.com/newrootsbronx/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.92506,40.82135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Inwood Greenmarket</name>
+        <description><![CDATA[Location: Seaman Ave & Isham St (N corner)<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.870106, -73.920792<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/inwood]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Seaman Ave & Isham St (N corner)]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.870106, -73.920792</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/inwood</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.920792,40.870106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Bed Stuy Fresh Food Box</name>
+        <description><![CDATA[Location: Decatur St & Lewis Ave<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 11am-3pm<br>Coordinates: 40.681330, -73.934810<br>Food Access Program Webpage: https://www.grownyc.org/foodbox/BedStuy]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Decatur St & Lewis Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>11am-3pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.681330, -73.934810</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/foodbox/BedStuy</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.93481,40.68133,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at McCarren Park Greenmarket</name>
+        <description><![CDATA[Location: N 12th St & Driggs Ave<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.719740, -73.953394<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/greenpoint-sa]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[N 12th St & Driggs Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.719740, -73.953394</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/greenpoint-sa</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.953394,40.71974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Carroll Gardens Greenmarket</name>
+        <description><![CDATA[Location: Smith St & 1st Pl<br>Day: Sundays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.679954, -73.995170<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/carroll-gardens]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Smith St & 1st Pl]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.679954, -73.995170</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/carroll-gardens</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.99517,40.679954,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Fort Greene Greenmarket</name>
+        <description><![CDATA[Location: Washington Park & Myrtle Ave.<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 9am-2pm<br>Coordinates: 40.692880, -73.973910<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/fort-greene]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Washington Park & Myrtle Ave.]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.692880, -73.973910</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/fort-greene</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.97391,40.69288,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Jackson Heights Greenmarket</name>
+        <description><![CDATA[Location: 79th St & Northern Blvd<br>Day: Sundays<br>Duration: Year Round<br>Compost Hours: 8:30am-2pm<br>Coordinates: 40.755111, -73.888222<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/queens/jackson-heights]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[79th St & Northern Blvd]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8:30am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.755111, -73.888222</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/queens/jackson-heights</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.888222,40.755111,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at 79th Street Greenmarket</name>
+        <description><![CDATA[Location: 77th St between Columbus Ave & Central Park West<br>Day: Sundays<br>Duration: Year Round<br>Compost Hours: 9am-3pm<br>Coordinates: 40.780087, -73.974657<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/79th-street]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[77th St between Columbus Ave & Central Park West]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-3pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.780087, -73.974657</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/79th-street</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.974657,40.780087,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Cortelyou Greenmarket</name>
+        <description><![CDATA[Location: Argyle Rd and Cortelyou Rd<br>Day: Sundays<br>Duration: Year Round<br>Compost Hours: 9am-1pm<br>Coordinates: 40.641438, -73.966333<br><br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/cortelyou]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>Argyle Rd and Cortelyou Rd</value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.641438, -73.966333
+</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/cortelyou</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.966333,40.641438,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Bowling Green Greenmarket</name>
+        <description><![CDATA[Location: Broadway at Battery Place<br>Day: Tuesdays<br>Duration: Year Round<br>Compost Hours: 8am-11am<br>Coordinates: 40.704748,-74.01356<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/bowling-green-tu]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>Broadway at Battery Place</value>
+          </Data>
+          <Data name="Day">
+            <value>Tuesdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-11am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.704748,-74.01356</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/bowling-green-tu</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.01356,40.704748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Abingdon Square Greenmarket</name>
+        <description><![CDATA[Location: W. 12th St and 8th Ave<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 8am-2pm<br>Coordinates: 40.737472, -74.005095<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/abingdon-square]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>W. 12th St and 8th Ave</value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.737472, -74.005095</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/abingdon-square</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.005095,40.737472,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Tribeca Greenmarket</name>
+        <description><![CDATA[Location: Greenwich St. & Duane St.<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 8am-1pm<br>Coordinates: 40.717424, -74.010793<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/tribeca-sa]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Greenwich St. & Duane St.]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.717424, -74.010793</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/tribeca-sa</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.010793,40.717424,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at St. George Greenmarket</name>
+        <description><![CDATA[Location: St. Marks and Hyatt St<br>Day: Saturdays <br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.641586,-74.077909<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/staten-island/saint-george]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>St. Marks and Hyatt St</value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays </value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.641586,-74.077909</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/staten-island/saint-george</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.077909,40.641586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East 96th Street Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 96th St & Lexington Ave<br>Day: Fridays<br>Duration: Year Round<br>Compost Hours: 7:30am-11:30am<br>Coordinates: 40.785792, -73.950833<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[96th St & Lexington Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>7:30am-11:30am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.785792, -73.950833</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.950833,40.785792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Prospect Heights Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Park Place & Carlton Ave <br>Day: Thursdays<br>Duration: Year Round<br>Compost Hours: 8am-11am<br>Coordinates: 40.677410,  -73.972226<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Park Place & Carlton Ave ]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-11am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.677410,  -73.972226</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.972226,40.67741,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crown Heights Franklin Ave Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Eastern Parkway & Franklin Ave<br>Day: Thursdays<br>Duration: Year Round<br>Compost Hours: 8:30am-11:30am<br>Coordinates: 40.670745, -73.957743<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Eastern Parkway & Franklin Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8:30am-11:30am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.670745, -73.957743</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.957743,40.670745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Columbia University Greenmarket </name>
+        <description><![CDATA[Location: 116th St & Broadway<br>Day: Sundays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.807638, -73.963963<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/columbia-su]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[116th St & Broadway]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.807638, -73.963963</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/columbia-su</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.963963,40.807638,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Brooklyn Borough Hall Greenmarket</name>
+        <description><![CDATA[Location: Court St & Montague St<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br><br>Coordinates: 40.693780, -73.990287<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/boro-hall-sa]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Court St & Montague St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm
+</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.693780, -73.990287</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/boro-hall-sa</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.990287,40.69378,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Sunnyside Greenmarket</name>
+        <description><![CDATA[Location: Skillman Ave & 42nd St<br>Day: Saturdays <br>Duration: Year Round<br>Compost Hours: 9am-1pm<br>Coordinates: 40.747109, -73.921961<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/queens/sunnyside]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Skillman Ave & 42nd St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays </value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.747109, -73.921961</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/queens/sunnyside</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.921961,40.747109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bensonhurst Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 18th Ave & 81st St<br>Day: Sundays<br>Duration: Seasonal<br>Compost Hours: 9am-1pm<br>Coordinates: 40.609627, -73.999669<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/bensonhurst]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[18th Ave & 81st St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.609627, -73.999669</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/bensonhurst</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.999669,40.609627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wilson Ave Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Wilson Ave & Moffat St<br>Day: Thursdays<br>Duration: Year Round<br>Compost Hours: 9am-1pm<br>Coordinates: 40.688793, -73.904826<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Wilson Ave & Moffat St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.688793, -73.904826</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.904826,40.688793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kew Gardens Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Metropolitan Ave & Audley St<br>Day: Thursdays<br>Duration: Year Round<br>Compost Hours: 9:30am-12:30pm<br>Coordinates: 40.707626, -73.836079<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Metropolitan Ave & Audley St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9:30am-12:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.707626, -73.836079</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.836079,40.707626,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ridgewood Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Myrtle Ave & Cypress Ave<br>Day: Saturdays<br>Duration: Seasonal<br>Compost Hours: 9:30am-1:30pm<br>Coordinates: 40.700220, -73.906531<br>Food Access Program Webpage: https://www.grownyc.org/farmstand/ridgewood]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Myrtle Ave & Cypress Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9:30am-1:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.700220, -73.906531</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/farmstand/ridgewood</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.906531,40.70022,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cypress Hills Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Fulton St & Richmond St<br>Day: Fridays<br>Duration: Seasonal<br>Compost Hours: 10am-1pm<br>Coordinates: 40.682299, -73.876748<br>Food Access Program Webpage: https://www.grownyc.org/farmstand/cypresshills]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Fulton St & Richmond St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>10am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.682299, -73.876748</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/farmstand/cypresshills</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.876748,40.682299,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Crown Heights Farmstand</name>
+        <description><![CDATA[Location: Nostrand Ave & Sullivan Pl<br>Day: Fridays<br>Duration: Seasonal<br>Compost Hours: 9am-2pm<br>Coordinates: 40.664616, -73.950915<br>Food Access Program Webpage: https://www.grownyc.org/farmstand/crownheights]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Nostrand Ave & Sullivan Pl]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.664616, -73.950915</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/farmstand/crownheights</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.950915,40.664616,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mott Haven Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 545 East 142nd Street<br>Day: Wednesdays<br>Duration: Seasonal<br>Compost Hours: 9am-12pm<br>Coordinates: 40.809894, -73.915999<br>Food Access Program Webpage: https://bronxworks.org/our-services/health-wellness/farm-stands/]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>545 East 142nd Street</value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.809894, -73.915999</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://bronxworks.org/our-services/health-wellness/farm-stands/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.915999,40.809894,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Morrisania Food Scrap Drop-off</name>
+        <description><![CDATA[Location: McKinley Square at 169th St & Boston Rd<br>Day: Wednesdays<br>Duration: Seasonal<br>Compost Hours: 10am-1pm<br>Coordinates: 40.831187, -73.900567<br>Food Access Program Webpage: https://www.grownyc.org/farmstand/morrisania]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[McKinley Square at 169th St & Boston Rd]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>10am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.831187, -73.900567</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/farmstand/morrisania</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.900567,40.831187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Uptown Grand Central Fresh Food Box</name>
+        <description><![CDATA[Location: 125th St & Park Ave<br>Day: Wednesdays<br>Duration: Year Round<br>Compost Hours: 2pm-7pm<br>Coordinates: 40.805033, -73.938971<br>Food Access Program Webpage: https://www.grownyc.org/foodbox/UGC]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[125th St & Park Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>2pm-7pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.805033, -73.938971</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/foodbox/UGC</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.938971,40.805033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Compost at Montefiore's Bronx Health Collective Fresh Food Box]]></name>
+        <description><![CDATA[Location: 871 Prospect Ave<br>Day: Fridays<br>Duration: Seasonal<br>Compost Hours: 11am-2pm<br>Coordinates: 40.820667, -73.901845<br>Food Access Program Webpage: https://www.grownyc.org/foodbox/montefiore]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>871 Prospect Ave</value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>11am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.820667, -73.901845</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/foodbox/montefiore</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.901845,40.820667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parkchester Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Virginia Park: Westchester Ave & Cross Bronx Expressway<br>Day: Fridays<br>Duration: Seasonal<br>Compost Hours: 8am-12pm<br>Coordinates: 40.833453, -73.861614<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/bronx/parkchester]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Virginia Park: Westchester Ave & Cross Bronx Expressway]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.833453, -73.861614</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/bronx/parkchester</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.861614,40.833453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Corona Food Scrap Drop-off</name>
+        <description><![CDATA[Location: Roosevelt Ave & 103 St<br>Day: Fridays<br>Duration: Seasonal<br>Compost Hours: 8am-1pm<br>Coordinates: 40.749728, -73.862513<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/queens/corona]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Roosevelt Ave & 103 St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Fridays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.749728, -73.862513</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/queens/corona</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.862513,40.749728,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bay Ridge Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 3rd Ave & 95th Street<br>Day: Saturdays<br>Duration: Seasonal<br>Compost Hours: 8am-12:30pm<br>Coordinates: 40.617400, -74.033703<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn/bay-ridge]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[3rd Ave & 95th Street]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.617400, -74.033703</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn/bay-ridge</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.033703,40.6174,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at 7th Ave Sunset Park Greenmarket</name>
+        <description><![CDATA[Location: 7th Ave & 44th St<br>Day: Saturdays<br>Duration: Year Round<br>Compost Hours: 8am-12pm<br>Coordinates: 40.646152, -74.002213<br>Food Access Program Webpage: https://www.grownyc.org/7aveSunsetParkGreenmarket]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[7th Ave & 44th St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.646152, -74.002213</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/7aveSunsetParkGreenmarket</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -74.002213,40.646152,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kensington Food Scrap Drop-off</name>
+        <description><![CDATA[Location: McDonald Ave & Albemarle Rd<br>Day: Saturdays<br>Duration: Seasonal<br>Compost Hours: 8:30am-11:30am<br>Coordinates: 40.644985, -73.980024<br>Food Access Program Webpage: https://www.grownyc.org/farmstand/kensington]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[McDonald Ave & Albemarle Rd]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Seasonal</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8:30am-11:30am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.644985, -73.980024</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/farmstand/kensington</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.980024,40.644985,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Dag Hammarskjold Plaza Greenmarket</name>
+        <description><![CDATA[Location: E 47th St & 2nd Ave<br>Day: Wednesdays<br>Duration: Year Round<br>Compost Hours: 8am-12:30pm<br>Coordinates: 40.752606, -73.969036<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/manhattan/dag-hammarskjold]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[E 47th St & 2nd Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-12:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.752606, -73.969036</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/manhattan/dag-hammarskjold</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.969036,40.752606,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Madison Square Park Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 23rd St & Broadway<br>Day: Wednesdays<br>Duration: Year Round<br>Compost Hours: 8am-1pm<br>Coordinates: 40.741669, -73.988969<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[23rd St & Broadway]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Wednesdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year Round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.741669, -73.988969</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.988969,40.741669,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Tucker Square Greenmarket</name>
+        <description><![CDATA[Location: 66th St & Columbus Ave<br>Day: Thursdays<br>Duration: Year-round<br>Compost Hours: 8am-11am<br>Coordinates: 40.773404,-73.981848<br>Food Access Program Webpage: ]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[66th St & Columbus Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-11am</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.773404,-73.981848</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value/>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.981848,40.773404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>145th St Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 145th St & Edgecombe Ave<br>Day: Thursdays<br>Duration: Year-round<br>Compost Hours: 7:30am-12pm<br>Coordinates: 40.823692, -73.943764<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[145th St & Edgecombe Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>7:30am-12pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.823692, -73.943764</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.943764,40.823692,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>181st Street Food Scrap Drop-off</name>
+        <description><![CDATA[Location: 181st St & Fort Washington Ave<br>Day: Thursdays<br>Duration: Year-round<br>Compost Hours: 7am-12:30pm<br>Coordinates: 40.850947, -73.938068<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[181st St & Fort Washington Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>7am-12:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.850947, -73.938068</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.938068,40.850947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Norwood Farmstand</name>
+        <description><![CDATA[Location: E Gun Hill Rd & Dekalb Ave<br>Day: Thursdays<br>Duration: Year-round<br>Compost Hours: 9am-2pm<br>Coordinates: 40.882010, -73.880346<br>Food Access Program Webpage: https://www.grownyc.org/farmstand/norwood]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[E Gun Hill Rd & Dekalb Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.882010, -73.880346</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/farmstand/norwood</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.880346,40.88201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Grand Army Plaza Greenmarket</name>
+        <description><![CDATA[Location: Flatbush Ave & Eastern Pkwy, north of the arch<br>Day: Saturdays<br>Duration: Year-round<br>Compost Hours: 8am-2pm<br>Coordinates: 40.673438, -73.969814<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/brooklyn-grand-army-plaza]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[Flatbush Ave & Eastern Pkwy, north of the arch]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Saturdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>8am-2pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.673438, -73.969814</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/brooklyn-grand-army-plaza</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.969814,40.673438,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at Forest Hills Greenmarket</name>
+        <description><![CDATA[Location: 70th Ave & Austin St<br>Day: Sundays<br>Duration: Year-round<br>Compost Hours: 9am-1pm<br>Coordinates: 40.721120, -73.846949<br>Food Access Program Webpage: https://www.grownyc.org/greenmarket/queens/forest-hills]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[70th Ave & Austin St]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>9am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.721120, -73.846949</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://www.grownyc.org/greenmarket/queens/forest-hills</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.846949,40.72112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Compost at BronxWorks Carolyn McLaughlin Community Center</name>
+        <description><![CDATA[Location: 1130 Grand Concourse<br>Day: Thursdays<br>Duration: Year-round<br>Compost Hours: 10am-1pm<br>Coordinates: 40.832680, -73.918805<br>Food Access Program Webpage: https://bronxworks.org/our-services/health-wellness/farm-stands/]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value>1130 Grand Concourse</value>
+          </Data>
+          <Data name="Day">
+            <value>Thursdays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>10am-1pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.832680, -73.918805</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>https://bronxworks.org/our-services/health-wellness/farm-stands/</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.918805,40.83268,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Asphalt Green Food Scrap Drop-off</name>
+        <description><![CDATA[Location: East 91st St & York Ave<br>Day: Sundays<br>Duration: Year-round<br>Compost Hours: 7:30am-12:30pm<br>Coordinates: 40.779055, -73.944665<br>Food Access Program Webpage: N/A]]></description>
+        <styleUrl>#icon-1899-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="Location">
+            <value><![CDATA[East 91st St & York Ave]]></value>
+          </Data>
+          <Data name="Day">
+            <value>Sundays</value>
+          </Data>
+          <Data name="Duration">
+            <value>Year-round</value>
+          </Data>
+          <Data name="Compost Hours">
+            <value>7:30am-12:30pm</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>40.779055, -73.944665</value>
+          </Data>
+          <Data name="Food Access Program Webpage">
+            <value>N/A</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -73.944665,40.779055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

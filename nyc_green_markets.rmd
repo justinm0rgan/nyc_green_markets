@@ -1,0 +1,73 @@
+---
+title: "Read in KML"
+author: "Justin Williams"
+date: "4/12/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-packages}
+library(tidyverse)
+library(sf)
+library(mapview)
+library(rvest)
+library(httr)
+library(here)
+```
+
+## Overview
+
+
+## Load in data
+
+```{r load-kml}
+green_markets <- read_sf(here::here("./data/GrowNYC Schedule & Map.kml"))
+
+view(green_markets)
+```
+
+## Get attributes
+
+```{r get-attributes}
+
+green_markets <- green_markets %>% 
+  separate(Description,
+           into = c("Location", "Day", "Duration",
+                    "Compost Hours", "Coordinates", "Webpage"),
+           sep = "<br>") %>% 
+  mutate(latitude = st_coordinates(geometry)[,1],
+         longitiude = st_coordinates(geometry)[,2]) %>%
+  st_drop_geometry() %>% 
+  subset(select = -c(Coordinates))
+
+view(green_markets)
+
+```
+
+Next need to do the following:
+  - strip away everything in each column before :
+  - strip away Compost at from Name column
+
+```{r create-type-column}
+(green_markets <- green_markets %>% 
+  mutate(type = case_when(
+    grepl("Greenmarket",Name) ~ "Greenmarket",
+    grepl("Fresh Food Box",Name) ~ "Fresh Food Box",
+    grepl("Food Scrap Drop-off",Name) ~ "Food Scrap Drop-off",
+    grepl("BronxWorks",Name) | grepl("Farmstand",Name) ~ "Farmstand",
+    grepl("Community Farm", Name) ~ "Community Farm")))
+```
+
+Strip away excess.
+
+```{r strip-away-excess}
+green_markets %>%
+  str_remove(Location,".*:")
+
+
+```
+
+
