@@ -12,13 +12,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r load-packages}
 library(tidyverse)
 library(sf)
-library(mapview)
-library(rvest)
-library(httr)
+#library(mapview)
 library(here)
 ```
 
 ## Overview
+
+This notebook will read in KML file and clean it for processing in the `sf` simple features demo for R
 
 
 ## Load in data
@@ -47,10 +47,6 @@ view(green_markets)
 
 ```
 
-Next need to do the following:
-  - strip away everything in each column before :
-  - strip away Compost at from Name column
-
 ```{r create-type-column}
 (green_markets <- green_markets %>% 
   mutate(type = case_when(
@@ -64,10 +60,16 @@ Next need to do the following:
 Strip away excess.
 
 ```{r strip-away-excess}
-green_markets %>%
-  str_remove(Location,".*:")
+(green_markets <- green_markets %>%
+  mutate(across(Location:Webpage, ~ gsub(".*:\\s","",.))) %>% 
+  mutate(Name = str_remove(Name, "Compost at")) %>% 
+  select(Name, type, everything()))
+```
 
+Next thing to do could be separate Compost hours time into start and end time columns. 
 
+```{r save-rds}
+saveRDS(green_markets, "./data/green_markets")
 ```
 
 
