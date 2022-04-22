@@ -12,7 +12,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r load-packages}
 library(tidyverse)
 library(sf)
-#library(mapview)
 library(here)
 ```
 
@@ -25,8 +24,6 @@ This notebook will read in KML file and clean it for processing in the `sf` simp
 
 ```{r load-kml}
 green_markets <- read_sf(here::here("./data/GrowNYC Schedule & Map.kml"))
-
-view(green_markets)
 ```
 
 ## Get attributes
@@ -35,15 +32,13 @@ view(green_markets)
 
 green_markets <- green_markets %>% 
   separate(Description,
-           into = c("Location", "Day", "Duration",
-                    "Compost Hours", "Coordinates", "Webpage"),
+           into = c("location", "day", "duration",
+                    "compost_hours", "coordinates", "webpage"),
            sep = "<br>") %>% 
-  mutate(latitude = st_coordinates(geometry)[,1],
-         longitiude = st_coordinates(geometry)[,2]) %>%
+  mutate(longitude = st_coordinates(geometry)[,1],
+         latitude = st_coordinates(geometry)[,2]) %>%
   st_drop_geometry() %>% 
-  subset(select = -c(Coordinates))
-
-view(green_markets)
+  subset(select = -c(coordinates))
 
 ```
 
@@ -61,7 +56,7 @@ Strip away excess.
 
 ```{r strip-away-excess}
 (green_markets <- green_markets %>%
-  mutate(across(Location:Webpage, ~ gsub(".*:\\s","",.))) %>% 
+  mutate(across(location:webpage, ~ gsub(".*:\\s","",.))) %>% 
   mutate(Name = str_remove(Name, "Compost at")) %>% 
   select(Name, type, everything()))
 ```

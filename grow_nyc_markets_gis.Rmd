@@ -1,0 +1,361 @@
+---
+title: "GIS Basics in R"
+author: "Justin Williams"
+date: "4/18/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-packages, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(sf)
+library(mapview)
+library(nycgeo)
+library(ggspatial)
+library(tmap)
+library(mapboxapi)
+library(scales)
+library(dotenv)
+```
+
+## Overview
+
+This notebook will take the pre-processed ![Google Maps KML file](https://www.google.com/maps/d/u/0/viewer?mid=1fqTOVOwP6fj4NXOpFHT2Y48e3zEghRiJ&ll=40.760619747874344%2C-73.98352704302141&z=11) from ![GROW NYC](https://www.grownyc.org/greenmarket/ourmarkets), and perform some basic mapping and spatial analysis in R. This is meant to give a brief overview of implementing some of the various packages within the R environment to generate geospatial visualizations.
+
+We will use a few different geospatial packages to do this, including:
+
+**sf** - basic geospatial transformations and predicates
+**mapview** - quick previews
+**nycgeo** - NYC geography and census data
+**ggspatial** - adding north arrow and scale bar
+**tmap** - creating maps both static and interactive
+**mapboxapi** - used to generate static basemaps
+
+Let's load in the data!
+
+```{r load-data}
+grow_nyc <- readRDS("./data/green_markets")
+
+# preview
+glimpse(grow_nyc)
+```
+
+We see its a data frame with 48 records and 9 columns. We pre-processed it to have separate coordinate columns so we could show how to use these to transform to a **sf** object 
+
+## Methods in **sf** pacakges
+
+**sf** has a bunch of different methods, to view them it's as simple as typing this bit of code:
+
+```{r sf-methods, echo=FALSE}
+methods(class = 'sf')
+```
+Most of the functions start with *st*, this stands for *spatial and temporal*. This is kind of a throwback to *postgis* old methods which was the old open source library serving as the foundation for a lot of geoprocessing engines. However, despite the confusion between *st* and *sf*, it makes it very easy to find functions, just type *st_* in the RStudio console, and you can sort through them. 
+
+## Create an SF object
+
+Since the imported data file has coordinates, we can create an **sf** object.
+We will utilize the `st_as_sf()` method, which allow us to create an **sf** object from a the data frame. To do this, we need to pass in the data frame along with the coordinates, and coordinate reference system (CRS). The most common CRS is WGS 84 4326, however, dependent upon the project, there are more specific CRS that could be better suited. For more detailed info, and to find out what CRS may work best for your particular project, check out this site ![spatialreference.org](https://spatialreference.org/). 
+
+I typically use a the standard projection used by the NYC government, which gives NYC a more natural elongated look. So let's use the `st_transform()` method to transform the data frame to ![NAD83 / New York Long Island (ftUS) State Plane projected coordinate system (EPSG 2263)](https://epsg.io/2263).
+
+```{r create-sf-object}
+grow_nyc_sf <- st_as_sf(x = grow_nyc,
+         coords = c("longitude","latitude"),
+         crs = 4326) %>% 
+         st_transform(crs = 2263)
+
+# check crs
+st_crs(grow_nyc_sf)
+
+# preview
+head(grow_nyc_sf)
+```
+
+Now let's preview the **sf** object with **mapview**
+
+## Preview with Mapview
+
+Mapview is great for a quick preview of the results.
+It's pretty easy to pass it a data frame with geometry and view it against a basemap. This just helps ensure the transformation to get it to this point have been correclty implemented. let's check it out!
+
+```{r preview-market-points-mapview}
+grow_nyc_sf %>% 
+  mapview(
+    col.regions = "green",
+    legend = T,
+    layer.name = "GROW NYC Markets",
+    alpha = 0.8
+  )
+```
+
+Looks great, now we can join it with NYC boundary data, and start creating some basic visualizations. 
+
+## Spatial Join with Community Districts
+
+We will use the **nyc_geo** package to get some NYC geography.
+We will use Community Districts (CD) for this first demonstration and eventually pull in some Census data as well.
+
+```{r get-community-districts-geo}
+nyc_cd <- nyc_boundaries(
+  geography = 'cd',
+)
+
+#preview df
+glimpse(nyc_cd)
+```
+
+For those familiar with the **gplot** package, we can use the `geom_sf()` function to plot some basic maps using some of the same techniques when creating other visualizations. I have chosen to manually specificy the `fill` paremeters for borough. I am doing this because later on when I want to overlay GROW NYC Market's and add a second legend, it's only doable by manually specifying these parameters.
+
+```{r plot-community districts}
+# plot community districts
+nyc_cd_plot <- ggplot() +
+  geom_sf(
+    data = nyc_cd,
+    color = "white",
+    lwd = 0.2,
+    aes(fill = borough_name),
+    alpha = 0.8) +
+  scale_fill_manual(values = c("lightblue", "deepskyblue4",
+                               muted("blue"),
+                               muted("purple"), "darkblue"),
+                               guide = guide_legend(override.aes = list(
+                                 linetype = "blank",
+                                 shape = NA
+                               ))) +
+  labs(fill = "Borough", 
+       title = "NYC Community Districts by Borough") +
+  theme_void() +
+  theme(plot.title.position = 'plot', 
+        plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid = element_line(color = "transparent"))
+
+nyc_cd_plot
+```
+
+Ok, now let's plot the GROW NYC green markets on top as points.
+
+```{r market-community-district}
+nyc_cd_market_plot <-
+  ggplot() +
+  geom_sf(
+    data = nyc_cd,
+    color = "white",
+    lwd = 0.2,
+    aes(fill = borough_name),
+    alpha = 0.8) +
+  geom_sf(
+    data = grow_nyc_sf,
+    aes(color = "GROW NYC Markets"),
+    alpha = 0.8,
+    show.legend = "point") +
+  scale_fill_manual(values = c("lightblue", "deepskyblue4",
+                               muted("blue"),
+                               muted("purple"), "darkblue"),
+                               guide = guide_legend(override.aes = list(
+                                 linetype = "blank",
+                                 shape = NA
+                               ))) +
+  scale_color_manual(values = c("GROW NYC Markets" = "black"),
+                     guide = guide_legend(
+                      override.aes = list(
+                      linetype = "blank",
+                      shape = 16))) +
+  labs(color = "",
+       fill = "Borough", 
+       title = "NYC Community Districts by Borough and GROW NYC Markets") +
+  theme_void() +
+# center the title
+  theme(plot.title.position = 'plot', 
+        plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid = element_line(color = "transparent"))
+
+nyc_cd_market_plot
+```
+
+Centering the plot 
+
+## Add north arrow and scale bar
+
+**ggspatial** package let's us easily add north arrow and scale bar.
+`location` determines where the scale bar is located. The first letter is `t` (top) or `b` (bottom) and the second letter `l` (left) or `r` (right). We can also add pads from the plot border to fine tune scale bar positioning.
+For the north arrow there are severl styles to choose from, you can run `?north_arrow_orienteering` to see all the options. 
+
+```{r add-north-arrow-scale-bar}
+nyc_cd_market_comp_plot <- nyc_cd_market_plot +
+  annotation_scale(
+    location = "bl",
+    pad_x = unit(3, "cm")
+  ) +
+  annotation_north_arrow(
+    location = "br",
+    pad_x = unit(0.5, "in"),
+    style = north_arrow_fancy_orienteering
+  ) +
+  theme(panel.grid = element_line(color = "transparent"))
+
+nyc_cd_market_comp_plot
+```
+
+## Spatial Join
+
+Let's do a spatial join to figure out which CD each GROW NYC Market belongs too.
+For this (you guessed it) we will utilize `st_join()`. It will take each geometry point, and join it to the following polygon from the CD data frame. There is an optional argument to this function called `join`, it will default to `st_intersects()`, which takes any point that intersects with the polygon and attributes it to said polygon. This can be altered to any other type of spatial predicate i.e. `st_within()`, `st_is_within_distance()` etc.... 
+
+```{r spatial-join}
+nyc_cd_grow <- nyc_cd %>% 
+  st_join(grow_nyc_sf)
+
+head(nyc_cd_grow)
+```
+
+```{r markets-per-cd}
+(nyc_grow_markets_sum <- nyc_cd_grow %>% 
+  mutate(market = ifelse(Name != "", 1, 0)) %>% # add boolean column for if has market
+  group_by(borough_name, borough_cd_id, market) %>% 
+  summarise(
+    count = n()
+  ) %>%
+  arrange(desc(count)))
+
+```
+
+## Graduated Symbology Map
+
+Another common map is a graduated symbology map. This type of map has symbols proportionate with the quantity of that particular variable within a specific geographic region. They are typically utilized for comparing two different variables.
+This map is most easily made in R by using the **tmap** package. The cool thing about this package is you can easily toggle between both static and interactive maps.
+Now we can summarize the data frame to count how many GROW NYC markets are in each CD.
+
+```{r graduated-symbology-map}
+tmap_mode("plot")
+nyc_grad <- tm_shape(nyc_grow_markets_sum) +
+  tm_polygons() +
+  tm_bubbles(size = "count",
+             alpha = 0.5,
+             col = "navy",
+             title.size = "",
+             ) +
+  tm_layout(legend.outside = F,
+            #legend.position = c(0,0.1),
+            legend.outside.position = "right",
+            main.title = "NYC Community Districts with\n       GROW NYC Markets",
+            frame = T)
+
+nyc_grad
+```
+
+## Static basemaps with Mapbox
+
+If we want to include a basemap with a static map we can do so using the **mapboxapi** package. To use Mapbox basemaps with R, you will first need a Mapbox account and access token. They are free register ![here](https://account.mapbox.com/).
+
+```{r grad-symbology-with-basemap}
+# load api key from .env
+mapbox_api <- mb_access_token(Sys.getenv("MAPBOX_API"),
+                              install = T)
+#set tiles
+nyc_tiles <- 
+  get_static_tiles(
+    location = nyc_grow_markets_sum,
+    zoom = 10,
+    style_id = "light-v9",
+    username = "mapbox",
+    access_token = mapbox_api
+  )
+
+# create map with background
+nyc_grad_basemap <- tm_shape(nyc_tiles) +
+  tm_rgb() +
+  nyc_grad +
+  tm_scale_bar(position = c(0.01, 0),
+               just = "left") + 
+  tm_compass(position = c("right", "top")) + 
+  tm_credits("(c) Mapbox, OSM    ", 
+             bg.color = "white",
+             position = c("RIGHT", "BOTTOM"))
+
+nyc_grad_basemap
+```
+
+## Choropleth Maps
+
+Choropleth maps are very common and easily visualized with R. First we need to use the **nycgeo** package to import some education level Census Data. They don't have Census Data on the Community District level so we will have to go with the next largest geography, Neighborhood Tabulation Area's (NTAS).
+
+```{r cd-median-income}
+# import ntas with census data
+nyc_ntas <- nyc_boundaries(geography = "nta",
+               add_acs_data = T)
+
+# plot choropleth map
+nyc_ntas_plot <- nyc_ntas %>% 
+  ggplot() +
+    geom_sf(aes(fill = pop_ba_above_pct_est),
+            color = "white",
+            lwd = 0.2) +
+    scale_fill_viridis_c(
+      name = "Bachelor's or higher",
+      labels = percent_format(),
+      option = "cividis"
+    ) +
+  labs(title = "Percent Bachelor's Degree or Higher by Neighborhood") +
+  theme_void() +
+  theme(plot.title.position = 'plot', 
+        plot.title = element_text(hjust = 0.5)) +
+  theme(panel.grid = element_line(color = "transparent"))
+  
+
+nyc_ntas_plot
+```
+
+We can also plot this with **tmap** and include a histogram to see the distribution of percent bachelor's degree or higher. 
+
+```{r choropleth-with-tm}
+nyc_ntas_plot_tm <- tm_shape(nyc_ntas) + 
+  tm_polygons(col = "pop_ba_above_pct_est",
+          palette = "cividis",
+          title = "2020 US Census",
+          legend.hist = TRUE,
+          legend.format = percent_format()) + 
+  tm_layout(main.title = "Percent Bachelor's Degree or Higher\nby Neighborhood",
+            frame = FALSE,
+            legend.outside = TRUE,
+            bg.color = "grey100",
+            legend.hist.width = 5,
+            fontfamily = "Verdana")
+
+nyc_ntas_plot_tm
+```
+Now we can overlay GROW NYC Markets, and make it interactive with **tmap** In order to make a **tmap** plot interactive, all we need to is use the function `tmap_mode("view")` and the resulting plot will be interactive. We can also include which attributes we want to popup when clicked on the map. 
+
+## Interactive Map
+
+We can easily make this an interactive map with GROW NYC Market data overlayed on top and tooltip pop-up info with the **tmap** package. 
+
+```{r interactive-popup-map}
+tmap_mode("view")
+
+tm_shape(nyc_ntas) +
+  tm_fill(col = "pop_ba_above_pct_est",
+          palette = "cividis",
+          alpha = 0.7,
+          title = "% Bachelor's or Higher",
+          popup.vars = c("Neighborhood" = "nta_name",
+                         "County" = "borough_name"),
+          legend.format = percent_format()) +
+  tm_layout(title = "Bachelor's or Higher and GROW NYC Markets") +
+  tm_shape(grow_nyc_sf) +
+  tm_dots(
+    col = "type",
+    border.col = "white",
+    border.lwd = 0.8,
+    border.alpha = 0.5,
+    palette = "Greens",
+    title = "Market Type",
+    popup.vars = c("Days" = "day",
+                   "Time" = "compost_hours",
+                   "Duration" = "duration")) +
+  tm_scale_bar()
+```
+
+## Facet map with race? and tm?
