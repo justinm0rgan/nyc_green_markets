@@ -1,5 +1,5 @@
 ---
-title: "GIS Basics in R"
+title: "Mapping in R with GROW NYC Food Market data"
 author: "Justin Williams"
 date: "4/18/2022"
 output: html_document
@@ -23,16 +23,16 @@ library(dotenv)
 
 ## Overview
 
-This notebook will take the pre-processed ![Google Maps KML file](https://www.google.com/maps/d/u/0/viewer?mid=1fqTOVOwP6fj4NXOpFHT2Y48e3zEghRiJ&ll=40.760619747874344%2C-73.98352704302141&z=11) from ![GROW NYC](https://www.grownyc.org/greenmarket/ourmarkets), and perform some basic mapping and spatial analysis in R. This is meant to give a brief overview of implementing some of the various packages within the R environment to generate geospatial visualizations.
+This notebook will take a pre-processed ![Google Maps KML file](https://www.google.com/maps/d/u/0/viewer?mid=1fqTOVOwP6fj4NXOpFHT2Y48e3zEghRiJ&ll=40.760619747874344%2C-73.98352704302141&z=11) from ![GROW NYC](https://www.grownyc.org/greenmarket/ourmarkets), and perform some basic mapping and spatial analysis in R. This is meant to give a brief overview of implementing some of the various packages within the R environment to generate geospatial visualizations.
 
 We will use a few different geospatial packages to do this, including:
 
 **sf** - basic geospatial transformations and predicates
-**mapview** - quick previews
+**mapview** - quick previews with interactivity and basemap
 **nycgeo** - NYC geography and census data
-**ggspatial** - adding north arrow and scale bar
-**tmap** - creating maps both static and interactive
-**mapboxapi** - used to generate static basemaps
+**ggspatial** - north arrow and scale bar
+**tmap** - creation of more detailed maps both static and interactive
+**mapboxapi** - generate static basemap tiles
 
 Let's load in the data!
 
@@ -43,7 +43,7 @@ grow_nyc <- readRDS("./data/green_markets")
 glimpse(grow_nyc)
 ```
 
-We see its a data frame with 48 records and 9 columns. We pre-processed it to have separate coordinate columns so we could show how to use these to transform to a **sf** object 
+We see its a data frame with 48 records and 9 columns. We pre-processed it to have separate `latitude` and `longitude` coordinate columns so we could show how to use these to transform to a **sf** object.
 
 ## Methods in **sf** pacakges
 
@@ -82,13 +82,18 @@ Mapview is great for a quick preview of the results.
 It's pretty easy to pass it a data frame with geometry and view it against a basemap. This just helps ensure the transformation to get it to this point have been correclty implemented. let's check it out!
 
 ```{r preview-market-points-mapview}
-grow_nyc_sf %>% 
+mapview_grow_nyc <- grow_nyc_sf %>% 
   mapview(
     col.regions = "green",
     legend = T,
     layer.name = "GROW NYC Markets",
     alpha = 0.8
   )
+
+mapshot(mapview_grow_nyc,
+        file = "./images/mapview_grow_nyc.png")
+
+mapview_grow_nyc
 ```
 
 Looks great, now we can join it with NYC boundary data, and start creating some basic visualizations. 
@@ -101,13 +106,15 @@ We will use Community Districts (CD) for this first demonstration and eventually
 ```{r get-community-districts-geo}
 nyc_cd <- nyc_boundaries(
   geography = 'cd',
-)
+) %>% 
+  st_transform(2263)
+
 
 #preview df
 glimpse(nyc_cd)
 ```
 
-For those familiar with the **gplot** package, we can use the `geom_sf()` function to plot some basic maps using some of the same techniques when creating other visualizations. I have chosen to manually specificy the `fill` paremeters for borough. I am doing this because later on when I want to overlay GROW NYC Market's and add a second legend, it's only doable by manually specifying these parameters.
+For those familiar with the **gplot** package, we can use the `geom_sf()` function to plot some basic maps using some of the same techniques when creating other visualizations. I have chosen to manually specificy the `fill` paremeters for borough. I am doing this because later on when I want to overlay GROW NYC Market's and add a second legend, it's only doable by manually specifying these parameters. `theme_void()` essentially removes the axis, otherwise the map would show the x (longitude) and y (latitude) coordinates on a grid. Centering the plot title is touch complex and involves using the `theme()` method followed by using the plot itself as a reference for centering, then adjusting the title itself. 
 
 ```{r plot-community districts}
 # plot community districts
@@ -131,6 +138,8 @@ nyc_cd_plot <- ggplot() +
   theme(plot.title.position = 'plot', 
         plot.title = element_text(hjust = 0.5)) +
   theme(panel.grid = element_line(color = "transparent"))
+
+ggsave("./images/nyc_cd_plot.png", plot = nyc_cd_plot)
 
 nyc_cd_plot
 ```
@@ -172,10 +181,11 @@ nyc_cd_market_plot <-
         plot.title = element_text(hjust = 0.5)) +
   theme(panel.grid = element_line(color = "transparent"))
 
+ggsave("./images/nyc_cd_market_plot.png", plot = nyc_cd_market_plot)
+
 nyc_cd_market_plot
 ```
 
-Centering the plot 
 
 ## Add north arrow and scale bar
 
@@ -196,8 +206,25 @@ nyc_cd_market_comp_plot <- nyc_cd_market_plot +
   ) +
   theme(panel.grid = element_line(color = "transparent"))
 
+ggsave("./images/nyc_cd_market_comp_plot.png", plot = nyc_cd_market_comp_plot)
+
 nyc_cd_market_comp_plot
 ```
+
+If we want to create a quick interactive map with this same data we can add on to the preview of the GROW NYC Markets we did earlier.
+
+```{r mapview-preview-quick-interactive}
+mapview_grow_cd <- grow_nyc_mapview +
+  mapview(nyc_cd, 
+          zcol = "borough_name",
+          layer.name = "Borough")
+
+mapshot(mapview_grow_cd,
+        file = "./images/mapview_grow_cd.png")
+
+mapview_grow_cd
+```
+
 
 ## Spatial Join
 
@@ -243,6 +270,9 @@ nyc_grad <- tm_shape(nyc_grow_markets_sum) +
             main.title = "NYC Community Districts with\n       GROW NYC Markets",
             frame = T)
 
+tmap_save(nyc_grad,
+          filename = "./images/tmap_nyc_grad.png")
+
 nyc_grad
 ```
 
@@ -253,7 +283,8 @@ If we want to include a basemap with a static map we can do so using the **mapbo
 ```{r grad-symbology-with-basemap}
 # load api key from .env
 mapbox_api <- mb_access_token(Sys.getenv("MAPBOX_API"),
-                              install = T)
+                              install = T,
+                              overwrite = T)
 #set tiles
 nyc_tiles <- 
   get_static_tiles(
@@ -275,6 +306,9 @@ nyc_grad_basemap <- tm_shape(nyc_tiles) +
              bg.color = "white",
              position = c("RIGHT", "BOTTOM"))
 
+tmap_save(nyc_grad_basemap,
+          filename = "./images/tmap_nyc_grad_basemap.png")
+
 nyc_grad_basemap
 ```
 
@@ -285,7 +319,8 @@ Choropleth maps are very common and easily visualized with R. First we need to u
 ```{r cd-median-income}
 # import ntas with census data
 nyc_ntas <- nyc_boundaries(geography = "nta",
-               add_acs_data = T)
+               add_acs_data = T) %>% 
+  st_transform(2263)
 
 # plot choropleth map
 nyc_ntas_plot <- nyc_ntas %>% 
@@ -303,6 +338,8 @@ nyc_ntas_plot <- nyc_ntas %>%
   theme(plot.title.position = 'plot', 
         plot.title = element_text(hjust = 0.5)) +
   theme(panel.grid = element_line(color = "transparent"))
+
+ggsave("./images/nyc_ntas_plot.png", plot = nyc_ntas_plot)
   
 
 nyc_ntas_plot
@@ -324,6 +361,9 @@ nyc_ntas_plot_tm <- tm_shape(nyc_ntas) +
             legend.hist.width = 5,
             fontfamily = "Verdana")
 
+tmap_save(nyc_ntas_plot_tm,
+          filename = "./images/tmap_nyc_ntas_choropleth.png")
+
 nyc_ntas_plot_tm
 ```
 Now we can overlay GROW NYC Markets, and make it interactive with **tmap** In order to make a **tmap** plot interactive, all we need to is use the function `tmap_mode("view")` and the resulting plot will be interactive. We can also include which attributes we want to popup when clicked on the map. 
@@ -335,7 +375,7 @@ We can easily make this an interactive map with GROW NYC Market data overlayed o
 ```{r interactive-popup-map}
 tmap_mode("view")
 
-tm_shape(nyc_ntas) +
+nyc_ntas_grow_plot_tm <- tm_shape(nyc_ntas) +
   tm_fill(col = "pop_ba_above_pct_est",
           palette = "cividis",
           alpha = 0.7,
@@ -356,6 +396,13 @@ tm_shape(nyc_ntas) +
                    "Time" = "compost_hours",
                    "Duration" = "duration")) +
   tm_scale_bar()
+
+tmap_save(nyc_ntas_grow_plot_tm,
+          filename = "./images/tmap_nyc_ntas_grow.png")
+tmap_save(nyc_ntas_grow_plot_tm,
+          filename = "./images/tmap_nyc_ntas_grow.html")
+
+nyc_ntas_grow_plot_tm
 ```
 
 ## Facet map with race? and tm?

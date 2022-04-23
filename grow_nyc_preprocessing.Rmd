@@ -13,11 +13,44 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(sf)
 library(here)
+library(RSelenium)
 ```
 
 ## Overview
 
 This notebook will read in KML file and clean it for processing in the `sf` simple features demo for R
+
+```{r}
+if (FALSE) {
+# start a chrome browser
+rD <- rsDriver(browser = c("chrome"))
+remDr <- rD[["client"]]
+remDr$open()
+remDr$navigate("https://www.google.com/maps/d/u/0/viewer?mid=1fqTOVOwP6fj4NXOpFHT2Y48e3zEghRiJ&ll=40.760619747874316%2C-73.98352704302141&z=11")
+
+ellipsis_element <- remDr$findElement(using = "class", value = "mU4ghb-xl07Ob-LgbsSe-Bz112c HzV7m-tJHJj-LgbsSe-Bz112c")
+
+ellipsis_element$clickElement()
+
+dl_kml_element <- remDr$findElement(using = "class",
+                                    value = "j07h3c")
+dl_kml_element$clickElement()
+
+ok_element <- remDr$findElement(using = "class",
+                                value = "RveJvd snByac")
+ok_element$clickElement()
+
+remDr$close()
+# stop the selenium server
+rD[["server"]]$stop()
+
+# if user forgets to stop server it will be garbage collected.
+rD <- rsDriver()
+rm(rD)
+gc(rD)
+}
+
+```
 
 
 ## Load in data
