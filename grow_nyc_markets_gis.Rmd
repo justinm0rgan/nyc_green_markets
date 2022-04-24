@@ -23,7 +23,7 @@ library(dotenv)
 
 ## Overview
 
-This notebook will take a pre-processed ![Google Maps KML file](https://www.google.com/maps/d/u/0/viewer?mid=1fqTOVOwP6fj4NXOpFHT2Y48e3zEghRiJ&ll=40.760619747874344%2C-73.98352704302141&z=11) from ![GROW NYC](https://www.grownyc.org/greenmarket/ourmarkets), and perform some basic mapping and spatial analysis in R. This is meant to give a brief overview of implementing some of the various packages within the R environment to generate geospatial visualizations.
+This notebook will take a pre-processed ![Google Maps KML (Keyhole Markup Language) file](https://www.google.com/maps/d/u/0/viewer?mid=1fqTOVOwP6fj4NXOpFHT2Y48e3zEghRiJ&ll=40.760619747874344%2C-73.98352704302141&z=11) from ![GROW NYC](https://www.grownyc.org/greenmarket/ourmarkets), and perform some basic mapping and spatial analysis in R. This is meant to give a brief overview of implementing some of the various packages within the R environment to generate geospatial visualizations.
 
 We will use a few different geospatial packages to do this, including:
 
@@ -96,9 +96,9 @@ mapshot(mapview_grow_nyc,
 mapview_grow_nyc
 ```
 
-Looks great, now we can join it with NYC boundary data, and start creating some basic visualizations. 
+Looks great, now we can get some NYC boundary data, and start creating some basic visualizations. 
 
-## Spatial Join with Community Districts
+## Get NYC geography and overlay GROW NYC Markets
 
 We will use the **nyc_geo** package to get some NYC geography.
 We will use Community Districts (CD) for this first demonstration and eventually pull in some Census data as well.
@@ -159,7 +159,10 @@ nyc_cd_market_plot <-
     data = grow_nyc_sf,
     aes(color = "GROW NYC Markets"),
     alpha = 0.8,
-    show.legend = "point") +
+    show.legend = "point",
+    pch = 21,
+    color = "white",
+    fill = "black") +
   scale_fill_manual(values = c("lightblue", "deepskyblue4",
                                muted("blue"),
                                muted("purple"), "darkblue"),
@@ -170,6 +173,9 @@ nyc_cd_market_plot <-
   scale_color_manual(values = c("GROW NYC Markets" = "black"),
                      guide = guide_legend(
                       override.aes = list(
+                      pch = 21,
+                      color = "white",
+                      fill = "black",
                       linetype = "blank",
                       shape = 16))) +
   labs(color = "",
@@ -253,7 +259,7 @@ head(nyc_cd_grow)
 
 Another common map is a graduated symbology map. This type of map has symbols proportionate with the quantity of that particular variable within a specific geographic region. They are typically utilized for comparing two different variables.
 This map is most easily made in R by using the **tmap** package. The cool thing about this package is you can easily toggle between both static and interactive maps.
-Now we can summarize the data frame to count how many GROW NYC markets are in each CD.
+Now we can use the summarized data frame to view how many GROW NYC markets are in each CD.
 
 ```{r graduated-symbology-map}
 tmap_mode("plot")
@@ -404,5 +410,3 @@ tmap_save(nyc_ntas_grow_plot_tm,
 
 nyc_ntas_grow_plot_tm
 ```
-
-## Facet map with race? and tm?
